@@ -225,7 +225,9 @@ function showToast(message) {
         toast.remove();
     }, 3500);
 }
-/* ==========================================================================\n   7. IDIOMA Y MONEDA\n   ========================================================================== */
+/* ==========================================================================
+   7. IDIOMA Y MONEDA
+   ========================================================================== */
 const BS_LOCALE = {
     lang: localStorage.getItem('bytescript-language') || 'es',
     currency: localStorage.getItem('bytescript-currency') || 'GTQ'
@@ -235,21 +237,26 @@ function initLocaleControls() {
     const languageSelect = document.getElementById('language-select');
     const currencySelect = document.getElementById('currency-select');
     if (!languageSelect || !currencySelect) return;
+
     languageSelect.value = BS_LOCALE.lang;
     currencySelect.value = BS_LOCALE.currency;
     applyLanguage(BS_LOCALE.lang);
     applyCurrency(BS_LOCALE.currency);
+}
 
-    languageSelect.addEventListener('change', e => {
-        BS_LOCALE.lang = e.target.value;
-        localStorage.setItem('bytescript-language', BS_LOCALE.lang);
-        applyLanguage(BS_LOCALE.lang);
-    });
-    currencySelect.addEventListener('change', e => {
-        BS_LOCALE.currency = e.target.value;
-        localStorage.setItem('bytescript-currency', BS_LOCALE.currency);
-        applyCurrency(BS_LOCALE.currency);
-    });
+function setByteScriptLanguage(lang) {
+    if (!['es', 'en'].includes(lang)) return;
+    BS_LOCALE.lang = lang;
+    localStorage.setItem('bytescript-language', lang);
+    applyLanguage(lang);
+    updatePricingLinks();
+}
+
+function setByteScriptCurrency(currency) {
+    if (!['GTQ', 'USD'].includes(currency)) return;
+    BS_LOCALE.currency = currency;
+    localStorage.setItem('bytescript-currency', currency);
+    applyCurrency(currency);
 }
 
 function applyLanguage(lang) {
@@ -286,7 +293,7 @@ function updateBudgetOptions() {
     const select = document.getElementById('presupuesto');
     if (!select) return;
     const usd = BS_LOCALE.currency === 'USD';
-    const values = usd ? ['$130 - $220', '$220 - $460', '$460+'] : ['Q1,000 - Q1,700', 'Q1,700 - Q3,500', 'Q3,500+'];
+    const values = usd ? ['$180 - $290', '$320 - $510', '$550+'] : ['Q1,000 - Q1,700', 'Q1,700 - Q3,500', 'Q3,500+'];
     [...select.options].forEach((option, i) => { if (values[i]) { option.textContent = values[i]; option.value = values[i]; } });
 }
 

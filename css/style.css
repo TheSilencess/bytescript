@@ -1066,3 +1066,23 @@ img {
 .locale-select:hover,.locale-select:focus { border-color:var(--accent-primary); }
 @media (max-width: 1120px) { .locale-controls { gap:.3rem; } .locale-select { padding:.5rem .55rem; } }
 @media (max-width: 900px) { .locale-controls { margin-left:auto; } .locale-select { max-width:74px; } }
+
+/* Locale controls spacing fix */
+.locale-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-left: 0.65rem;
+}
+.locale-select {
+    min-width: 48px;
+    height: 42px;
+    padding: 0 0.7rem;
+}
+#currency-select { min-width: 58px; }
+.nav-actions { gap: 0.75rem; }
+@media (max-width: 1180px) {
+    .nav-menu { gap: 1.15rem; }
+    .nav-link { font-size: 0.82rem; }
+    .nav-btn { padding-left: 1rem; padding-right: 1rem; }
+}

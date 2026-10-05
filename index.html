@@ -54,7 +54,7 @@
     }
     </script>
 <link href="css/style.css" rel="stylesheet"/>
-<script defer="" src="js/script.js"></script>
+<script defer="" src="js/script.js?v=3"></script>
 </head>
 <body>
 <!-- Barra de progreso de lectura -->
@@ -78,8 +78,8 @@
 </ul>
 </nav>
 <div class="nav-actions"><div aria-label="Language and currency preferences" class="locale-controls">
-<select aria-label="Idioma / Language" class="locale-select" id="language-select"><option value="es">ES</option><option value="en">EN</option></select>
-<select aria-label="Moneda / Currency" class="locale-select" id="currency-select"><option value="GTQ">GTQ</option><option value="USD">USD</option></select>
+<select aria-label="Idioma / Language" class="locale-select" id="language-select" onchange="setByteScriptLanguage(this.value)"><option value="es">ES</option><option value="en">EN</option></select>
+<select aria-label="Moneda / Currency" class="locale-select" id="currency-select" onchange="setByteScriptCurrency(this.value)"><option value="GTQ">GTQ</option><option value="USD">USD</option></select>
 </div>
 <button aria-label="Cambiar tema de color" class="icon-btn" id="theme-toggle" title="Alternar tema">
 <svg class="sun-icon" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
@@ -92,7 +92,7 @@
 </div>
 </div>
 </header>
-<main data-en="WORK PROCESS" data-es="PROCESO DE TRABAJO" data-i18n="t108">
+<main>
 <!-- HERO SECTION -->
 <section class="hero-section" id="hero">
 <div class="container hero-grid">
@@ -258,7 +258,7 @@
 <span class="package-num">01</span>
 <h3>STARTER</h3>
 <p class="pricing-desc" data-en="Ideal for businesses starting their digital presence." data-es="Ideal para negocios que necesitan comenzar su presencia digital." data-i18n="t43">Ideal para negocios que necesitan comenzar su presencia digital.</p>
-<div class="price-box" data-price-gtq="1000" data-price-usd="130">
+<div class="price-box" data-price-gtq="1000" data-price-usd="180">
 <span class="currency">Q</span>
 <span class="amount">1,000</span>
 </div>
@@ -284,7 +284,7 @@
 <span class="package-num">02</span>
 <h3>BUSINESS</h3>
 <p class="pricing-desc" data-en="Ideal for businesses that need a more complete digital presence." data-es="Ideal para negocios que quieren una presencia digital más completa." data-i18n="t54">Ideal para negocios que quieren una presencia digital más completa.</p>
-<div class="price-box" data-price-gtq="1700" data-price-usd="220">
+<div class="price-box" data-price-gtq="1700" data-price-usd="290">
 <span class="currency">Q</span>
 <span class="amount">1,700</span>
 </div>
@@ -311,7 +311,7 @@
 <span class="package-num">03</span>
 <h3>ECOMMERCE</h3>
 <p class="pricing-desc" data-en="For businesses ready to sell products online professionally." data-es="Para negocios que quieren vender productos online de forma profesional." data-i18n="t66">Para negocios que quieren vender productos online de forma profesional.</p>
-<div class="price-box" data-price-gtq="3500" data-price-usd="460">
+<div class="price-box" data-price-gtq="3500" data-price-usd="510">
 <span class="currency">Q</span>
 <span class="amount">3,500</span>
 </div>
