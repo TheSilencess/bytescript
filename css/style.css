@@ -1060,3 +1060,9 @@ img {
     }
     .fade-in { opacity: 1; transform: none; }
 }
+/* Language & currency controls */
+.locale-controls { display:flex; align-items:center; gap:.45rem; }
+.locale-select { appearance:none; background:var(--bg-secondary); color:var(--text-primary); border:1px solid var(--border-color); border-radius:8px; padding:.55rem .7rem; font:inherit; font-size:.78rem; font-weight:700; cursor:pointer; outline:none; }
+.locale-select:hover,.locale-select:focus { border-color:var(--accent-primary); }
+@media (max-width: 1120px) { .locale-controls { gap:.3rem; } .locale-select { padding:.5rem .55rem; } }
+@media (max-width: 900px) { .locale-controls { margin-left:auto; } .locale-select { max-width:74px; } }

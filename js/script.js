@@ -34,7 +34,7 @@ function initThemeToggle() {
         
         htmlElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('bytescript-theme', newTheme);
-        showToast(`Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'} activado`);
+        showToast(BS_LOCALE.lang === 'en' ? `${newTheme === 'dark' ? 'Dark' : 'Light'} mode enabled` : `Modo ${newTheme === 'dark' ? 'oscuro' : 'claro'} activado`);
     });
 }
 
@@ -175,20 +175,12 @@ function initContactForm() {
 
         if (isValid) {
             // Construir mensaje codificado para WhatsApp
-            const textMsg = `Hola ByteScript, quiero solicitar una cotización.
-            
-*Nombre:* ${nombre}
-*Empresa:* ${empresa}
-*Email:* ${email}
-*WhatsApp:* ${whatsapp}
-*Tipo de proyecto:* ${tipoProyecto}
-*Presupuesto:* ${presupuesto}
-*Mensaje:* ${mensaje}`;
+            const textMsg = BS_LOCALE.lang === 'en' ? `Hi ByteScript, I'd like to request a quote.\n\n*Name:* ${nombre}\n*Company:* ${empresa}\n*Email:* ${email}\n*WhatsApp:* ${whatsapp}\n*Project type:* ${tipoProyecto}\n*Budget:* ${presupuesto}\n*Message:* ${mensaje}` : `Hola ByteScript, quiero solicitar una cotización.\n\n*Nombre:* ${nombre}\n*Empresa:* ${empresa}\n*Email:* ${email}\n*WhatsApp:* ${whatsapp}\n*Tipo de proyecto:* ${tipoProyecto}\n*Presupuesto:* ${presupuesto}\n*Mensaje:* ${mensaje}`;
 
             const encodedMsg = encodeURIComponent(textMsg.replace(/^ +/gm, ''));
             const whatsappUrl = `https://wa.me/50242023344?text=${encodedMsg}`;
 
-            showToast('Redirigiendo a WhatsApp...');
+            showToast(BS_LOCALE.lang === 'en' ? 'Opening WhatsApp...' : 'Redirigiendo a WhatsApp...');
             
             setTimeout(() => {
                 window.open(whatsappUrl, '_blank');
@@ -233,3 +225,85 @@ function showToast(message) {
         toast.remove();
     }, 3500);
 }
+/* ==========================================================================\n   7. IDIOMA Y MONEDA\n   ========================================================================== */
+const BS_LOCALE = {
+    lang: localStorage.getItem('bytescript-language') || 'es',
+    currency: localStorage.getItem('bytescript-currency') || 'GTQ'
+};
+
+function initLocaleControls() {
+    const languageSelect = document.getElementById('language-select');
+    const currencySelect = document.getElementById('currency-select');
+    if (!languageSelect || !currencySelect) return;
+    languageSelect.value = BS_LOCALE.lang;
+    currencySelect.value = BS_LOCALE.currency;
+    applyLanguage(BS_LOCALE.lang);
+    applyCurrency(BS_LOCALE.currency);
+
+    languageSelect.addEventListener('change', e => {
+        BS_LOCALE.lang = e.target.value;
+        localStorage.setItem('bytescript-language', BS_LOCALE.lang);
+        applyLanguage(BS_LOCALE.lang);
+    });
+    currencySelect.addEventListener('change', e => {
+        BS_LOCALE.currency = e.target.value;
+        localStorage.setItem('bytescript-currency', BS_LOCALE.currency);
+        applyCurrency(BS_LOCALE.currency);
+    });
+}
+
+function applyLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const value = el.dataset[lang];
+        if (value) el.textContent = value;
+    });
+    document.querySelectorAll('[data-placeholder-es]').forEach(el => {
+        el.placeholder = lang === 'en' ? el.dataset.placeholderEn : el.dataset.placeholderEs;
+    });
+    document.title = lang === 'en'
+        ? 'ByteScript | Web & Custom Software Development'
+        : 'ByteScript | Desarrollo Web y Software en Guatemala';
+    const desc = document.querySelector('meta[name="description"]');
+    if (desc) desc.content = lang === 'en'
+        ? 'Web and custom software development for businesses. Websites, e-commerce and tailored digital solutions built for growth.'
+        : 'Agencia de desarrollo web y software en Guatemala. Creamos sitios web profesionales, tiendas online e-commerce y soluciones digitales a medida para hacer crecer tu negocio.';
+    updateBudgetOptions();
+}
+
+function applyCurrency(currency) {
+    document.querySelectorAll('.price-box[data-price-gtq]').forEach(box => {
+        const isUSD = currency === 'USD';
+        box.querySelector('.currency').textContent = isUSD ? '$' : 'Q';
+        const amount = Number(isUSD ? box.dataset.priceUsd : box.dataset.priceGtq);
+        box.querySelector('.amount').textContent = amount.toLocaleString(isUSD ? 'en-US' : 'es-GT');
+    });
+    updateBudgetOptions();
+    updatePricingLinks();
+}
+
+function updateBudgetOptions() {
+    const select = document.getElementById('presupuesto');
+    if (!select) return;
+    const usd = BS_LOCALE.currency === 'USD';
+    const values = usd ? ['$130 - $220', '$220 - $460', '$460+'] : ['Q1,000 - Q1,700', 'Q1,700 - Q3,500', 'Q3,500+'];
+    [...select.options].forEach((option, i) => { if (values[i]) { option.textContent = values[i]; option.value = values[i]; } });
+}
+
+function updatePricingLinks() {
+    const cards = document.querySelectorAll('.pricing-card');
+    cards.forEach(card => {
+        const link = card.querySelector('.pricing-footer a');
+        const name = card.querySelector('h3')?.textContent || 'package';
+        const box = card.querySelector('.price-box');
+        if (!link || !box) return;
+        const price = `${box.querySelector('.currency').textContent}${box.querySelector('.amount').textContent}`;
+        const msg = BS_LOCALE.lang === 'en'
+            ? `Hi ByteScript, I'm interested in the ${name} package (${price}). Could you give me more details?`
+            : `Hola ByteScript, me interesa el paquete ${name} (${price}). ¿Me pueden dar más detalles?`;
+        link.href = `https://wa.me/50242023344?text=${encodeURIComponent(msg)}`;
+    });
+}
+
+// Initialize after the original modules have registered.
+document.addEventListener('DOMContentLoaded', initLocaleControls);

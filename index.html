@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+
+<html data-lang-ready="true" data-theme="dark" lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteScript | Desarrollo Web y Software en Guatemala</title>
-    <meta name="description" content="Agencia de desarrollo web y software en Guatemala. Creamos sitios web profesionales, tiendas online e-commerce y soluciones digitales a medida para hacer crecer tu negocio.">
-    <meta name="keywords" content="desarrollo web Guatemala, diseño web Guatemala, páginas web Guatemala, desarrollo de software Guatemala, tiendas online Guatemala, agencia de desarrollo web">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://bytescript.gt/">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="image/ByteScript.png">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bytescript.gt/">
-    <meta property="og:title" content="ByteScript | Desarrollo Web y Software Profesional">
-    <meta property="og:description" content="Convertimos ideas en experiencias digitales que hacen crecer negocios. Sitios web, tiendas online y software a medida.">
-    <meta property="og:image" content="https://bytescript.gt/assets/images/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bytescript.gt/">
-    <meta property="twitter:title" content="ByteScript | Desarrollo Web y Software Profesional">
-    <meta property="twitter:description" content="Convertimos ideas en experiencias digitales que hacen crecer negocios. Sitios web, tiendas online y software a medida.">
-    <meta property="twitter:image" content="https://bytescript.gt/assets/images/og-image.jpg">
-
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ByteScript | Desarrollo Web y Software en Guatemala</title>
+<meta content="Agencia de desarrollo web y software en Guatemala. Creamos sitios web profesionales, tiendas online e-commerce y soluciones digitales a medida para hacer crecer tu negocio." name="description"/>
+<meta content="desarrollo web Guatemala, diseño web Guatemala, páginas web Guatemala, desarrollo de software Guatemala, tiendas online Guatemala, agencia de desarrollo web" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://bytescript.gt/" rel="canonical"/>
+<!-- Favicon -->
+<link href="image/ByteScript.png" rel="icon" type="image/png"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="https://bytescript.gt/" property="og:url"/>
+<meta content="ByteScript | Desarrollo Web y Software Profesional" property="og:title"/>
+<meta content="Convertimos ideas en experiencias digitales que hacen crecer negocios. Sitios web, tiendas online y software a medida." property="og:description"/>
+<meta content="https://bytescript.gt/assets/images/og-image.jpg" property="og:image"/>
+<!-- Twitter -->
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://bytescript.gt/" property="twitter:url"/>
+<meta content="ByteScript | Desarrollo Web y Software Profesional" property="twitter:title"/>
+<meta content="Convertimos ideas en experiencias digitales que hacen crecer negocios. Sitios web, tiendas online y software a medida." property="twitter:description"/>
+<meta content="https://bytescript.gt/assets/images/og-image.jpg" property="twitter:image"/>
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
@@ -55,706 +53,637 @@
       }
     }
     </script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/script.js"></script>
 </head>
 <body>
-    <!-- Barra de progreso de lectura -->
-    <div id="scroll-progress" aria-hidden="true"></div>
-
-    <!-- Header / Nav -->
-    <header id="header" class="navbar">
-        <div class="container nav-container">
-            <a href="#hero" class="brand-logo" aria-label="ByteScript Inicio">
-                <span class="logo-symbol">&lt;/&gt;</span> ByteScript<span class="logo-dot">.</span>
-            </a>
-
-            <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
-                <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link">Inicio</a></li>
-                    <li><a href="#beneficios" class="nav-link">Por qué un sitio</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#precios" class="nav-link">Precios</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#proceso" class="nav-link">Proceso</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-
-            <div class="nav-actions">
-                <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema de color" title="Alternar tema">
-                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                </button>
-                <a href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo%20web." target="_blank" rel="noopener noreferrer" class="btn btn-secondary nav-btn">Hablar con nosotros</a>
-                <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- HERO SECTION -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <div class="badge fade-in">
-                        <span class="badge-dot"></span> DESARROLLO DIGITAL PARA NEGOCIOS
+<!-- Barra de progreso de lectura -->
+<div aria-hidden="true" id="scroll-progress"></div>
+<!-- Header / Nav -->
+<header class="navbar" id="header">
+<div class="container nav-container">
+<a aria-label="ByteScript Inicio" class="brand-logo" href="#hero">
+<span class="logo-symbol">&lt;/&gt;</span> ByteScript<span class="logo-dot">.</span>
+</a>
+<nav aria-label="Navegación principal" class="nav-menu" id="nav-menu">
+<ul class="nav-list">
+<li><a class="nav-link" data-en="Home" data-es="Inicio" data-i18n="t0" href="#hero">Inicio</a></li>
+<li><a class="nav-link" data-en="Why a website" data-es="Por qué un sitio" data-i18n="t1" href="#beneficios">Por qué un sitio</a></li>
+<li><a class="nav-link" data-en="Services" data-es="Servicios" data-i18n="t2" href="#servicios">Servicios</a></li>
+<li><a class="nav-link" data-en="Pricing" data-es="Precios" data-i18n="t3" href="#precios">Precios</a></li>
+<li><a class="nav-link" data-en="Projects" data-es="Proyectos" data-i18n="t4" href="#proyectos">Proyectos</a></li>
+<li><a class="nav-link" data-en="About" data-es="Nosotros" data-i18n="t5" href="#nosotros">Nosotros</a></li>
+<li><a class="nav-link" data-en="Process" data-es="Proceso" data-i18n="t6" href="#proceso">Proceso</a></li>
+<li><a class="nav-link" data-en="Contact" data-es="Contacto" data-i18n="t7" href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+<div class="nav-actions"><div aria-label="Language and currency preferences" class="locale-controls">
+<select aria-label="Idioma / Language" class="locale-select" id="language-select"><option value="es">ES</option><option value="en">EN</option></select>
+<select aria-label="Moneda / Currency" class="locale-select" id="currency-select"><option value="GTQ">GTQ</option><option value="USD">USD</option></select>
+</div>
+<button aria-label="Cambiar tema de color" class="icon-btn" id="theme-toggle" title="Alternar tema">
+<svg class="sun-icon" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+<svg class="moon-icon" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+</button>
+<a class="btn btn-secondary nav-btn" data-en="Talk to us" data-es="Hablar con nosotros" data-i18n="t8" href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo%20web." rel="noopener noreferrer" target="_blank">Hablar con nosotros</a>
+<button aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú de navegación" class="hamburger" id="hamburger-btn">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</header>
+<main data-en="WORK PROCESS" data-es="PROCESO DE TRABAJO" data-i18n="t108">
+<!-- HERO SECTION -->
+<section class="hero-section" id="hero">
+<div class="container hero-grid">
+<div class="hero-content">
+<div class="badge fade-in" data-en="DIGITAL DEVELOPMENT FOR BUSINESSES" data-es="DESARROLLO DIGITAL PARA NEGOCIOS" data-i18n="t9">
+<span class="badge-dot"></span> DESARROLLO DIGITAL PARA NEGOCIOS
                     </div>
-                    <h1 class="hero-title fade-in">
-                        Convertimos ideas en experiencias digitales que <span class="text-accent">hacen crecer negocios.</span>
-                    </h1>
-                    <p class="hero-description fade-in">
+<h1 class="hero-title fade-in" data-en="We turn ideas into digital experiences that" data-es="Convertimos ideas en experiencias digitales que" data-i18n="t10">
+                        Convertimos ideas en experiencias digitales que <span class="text-accent" data-en="help businesses grow." data-es="hacen crecer negocios." data-i18n="t11">hacen crecer negocios.</span>
+</h1>
+<p class="hero-description fade-in" data-en="At ByteScript, we build websites, online stores, and digital solutions designed to give your business a professional, modern presence built for growth." data-es="En ByteScript desarrollamos sitios web, tiendas online y soluciones digitales diseñadas para que tu negocio tenga una presencia profesional, moderna y preparada para crecer." data-i18n="t12">
                         En ByteScript desarrollamos sitios web, tiendas online y soluciones digitales diseñadas para que tu negocio tenga una presencia profesional, moderna y preparada para crecer.
                     </p>
-                    <div class="hero-cta-group fade-in">
-                        <a href="#contacto" class="btn btn-primary">Solicitar una cotización</a>
-                        <a href="#servicios" class="btn btn-tertiary">Ver nuestros servicios &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Elemento Visual Tecnológico CSS (IDE Interface Abstracta) -->
-                <div class="hero-visual fade-in">
-                    <div class="ide-frame">
-                        <div class="ide-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                            <span class="ide-title">ByteScript — Core.ts</span>
-                        </div>
-                        <div class="ide-body">
-                            <div class="code-line"><span class="c-keyword">import</span> { Business, DigitalGrowth } <span class="c-keyword">from</span> <span class="c-string">'@bytescript/core'</span>;</div>
-                            <div class="code-line">&nbsp;</div>
-                            <div class="code-line"><span class="c-keyword">async function</span> <span class="c-func">scaleBusiness</span>(client: Business) {</div>
-                            <div class="code-line">&nbsp;&nbsp;<span class="c-keyword">const</span> solution = <span class="c-keyword">await</span> DigitalGrowth.<span class="c-func">deploy</span>({</div>
-                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;performance: <span class="c-string">'100%'</span>,</div>
-                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;seoOptimized: <span class="c-keyword">true</span>,</div>
-                            <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;conversionRate: <span class="c-string">'Maximum'</span></div>
-                            <div class="code-line">&nbsp;&nbsp;});</div>
-                            <div class="code-line">&nbsp;&nbsp;<span class="c-keyword">return</span> solution.<span class="c-func">generateResults</span>();</div>
-                            <div class="code-line">}</div>
-                        </div>
-                        <div class="ide-footer">
-                            <div class="status-indicator"><span class="pulse-green"></span> System Online</div>
-                            <div class="status-metric">Latency: 12ms</div>
-                        </div>
-                    </div>
-                    <div class="glow-backdrop"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: POR QUÉ TU NEGOCIO NECESITA PRESENCIA DIGITAL -->
-        <section id="beneficios" class="section section-bordered">
-            <div class="container">
-                <div class="section-header text-center fade-in">
-                    <span class="section-tag">POR QUÉ DIGITALIZARTE</span>
-                    <h2 class="section-title">Tu negocio no debería depender únicamente de las redes sociales.</h2>
-                    <p class="section-subtitle">Las redes atraen atención, pero un sitio web propio cierra ventas, genera autoridad y pertenece completamente a tu marca.</p>
-                </div>
-
-                <div class="grid grid-3">
-                    <div class="card card-interactive fade-in">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <h3>Generar Confianza</h3>
-                        <p>El 84% de los consumidores considera que una empresa con sitio web propio es más creíble que una que solo opera en redes sociales.</p>
-                    </div>
-
-                    <div class="card card-interactive fade-in">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        </div>
-                        <h3>Captar Clientes 24/7</h3>
-                        <p>Tu plataforma trabaja sin descanso. Los clientes pueden informarse, cotizar o comprar a cualquier hora del día.</p>
-                    </div>
-
-                    <div class="card card-interactive fade-in">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                        </div>
-                        <h3>Aparecer en Google</h3>
-                        <p>Posicionamos tu empresa en las búsquedas locales. Aparece exactamente cuando las personas buscan lo que tú vendes.</p>
-                    </div>
-
-                    <div class="card card-interactive fade-in">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        </div>
-                        <h3>Facilitar el Contacto</h3>
-                        <p>Rutas directas de comunicación con tus clientes mediante formularios interactivos y botones WhatsApp preconfigurados.</p>
-                    </div>
-
-                    <div class="card card-interactive fade-in">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        </div>
-                        <h3>Diferenciación Única</h3>
-                        <p>Escapa de las plantillas genéricas. Diseñamos una identidad visual exclusiva que refleja el valor real de tu marca.</p>
-                    </div>
-
-                    <div class="card card-interactive fade-in">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                        </div>
-                        <h3>Canal Propio de Ventas</h3>
-                        <p>No dependes de los cambios de algoritmo ni de las políticas de terceros. Tu plataforma es un activo 100% de tu empresa.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: QUÉ HACEMOS -->
-        <section id="servicios" class="section">
-            <div class="container">
-                <div class="section-header text-center fade-in">
-                    <span class="section-tag">SERVICIOS</span>
-                    <h2 class="section-title">Soluciones digitales de alto nivel</h2>
-                    <p class="section-subtitle">Construimos plataformas rápidas, seguras y diseñadas específicamente para cumplir tus metas de negocio.</p>
-                </div>
-
-                <div class="grid grid-2">
-                    <div class="service-card fade-in">
-                        <div class="service-header">
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                            </div>
-                            <h3>Desarrollo Web</h3>
-                        </div>
-                        <p>Sitios web modernos, ultrarrápidos, totalmente responsive y optimizados para buscadores. Creamos la carta de presentación perfecta para tu empresa.</p>
-                    </div>
-
-                    <div class="service-card fade-in">
-                        <div class="service-header">
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                            </div>
-                            <h3>Ecommerce</h3>
-                        </div>
-                        <p>Tiendas online profesionales preparadas para mostrar catálogos de productos, gestionar carritos de compra y recibir pedidos de forma eficiente.</p>
-                    </div>
-
-                    <div class="service-card fade-in">
-                        <div class="service-header">
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                            </div>
-                            <h3>Sistemas Personalizados</h3>
-                        </div>
-                        <p>Desarrollo de sistemas web a la medida. Automatizamos procesos internos, paneles de gestión y herramientas específicas adaptadas a tu flujo de trabajo.</p>
-                    </div>
-
-                    <div class="service-card fade-in">
-                        <div class="service-header">
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-                            </div>
-                            <h3>Rediseño Web</h3>
-                        </div>
-                        <p>Modernización de sitios web obsoletos. Transformamos plataformas lentas o desactualizadas en herramientas de conversión con UI/UX de nivel mundial.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN DE PAQUETES -->
-        <section id="precios" class="section section-bordered">
-            <div class="container">
-                <div class="section-header text-center fade-in">
-                    <span class="section-tag">INVERSIÓN TRANSPARENTE</span>
-                    <h2 class="section-title">Paquetes adaptados a la etapa de tu negocio</h2>
-                    <p class="section-subtitle">Sin costos ocultos. Proyectos entregados con máxima calidad y optimización.</p>
-                </div>
-
-                <div class="grid grid-3 pricing-grid">
-                    <!-- Paquete 1: STARTER -->
-                    <div class="pricing-card fade-in">
-                        <div class="pricing-header">
-                            <span class="package-num">01</span>
-                            <h3>STARTER</h3>
-                            <p class="pricing-desc">Ideal para negocios que necesitan comenzar su presencia digital.</p>
-                            <div class="price-box">
-                                <span class="currency">Q</span>
-                                <span class="amount">1,000</span>
-                            </div>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Landing page profesional</li>
-                            <li><span class="check">✓</span> Diseño responsive</li>
-                            <li><span class="check">✓</span> Dominio .com</li>
-                            <li><span class="check">✓</span> Hosting incluido</li>
-                            <li><span class="check">✓</span> Botón de WhatsApp</li>
-                            <li><span class="check">✓</span> Formulario de contacto</li>
-                            <li><span class="check">✓</span> SEO básico</li>
-                            <li><span class="check">✓</span> 3 cambios después de la entrega</li>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20interesa%20el%20paquete%20STARTER%20de%20Q1%2C000.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20detalles%3F" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">Quiero este paquete</a>
-                        </div>
-                    </div>
-
-                    <!-- Paquete 2: BUSINESS (Destacado) -->
-                    <div class="pricing-card featured fade-in">
-                        <div class="popular-badge">MÁS SOLICITADO</div>
-                        <div class="pricing-header">
-                            <span class="package-num">02</span>
-                            <h3>BUSINESS</h3>
-                            <p class="pricing-desc">Ideal para negocios que quieren una presencia digital más completa.</p>
-                            <div class="price-box">
-                                <span class="currency">Q</span>
-                                <span class="amount">1,700</span>
-                            </div>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Landing page premium</li>
-                            <li><span class="check">✓</span> Diseño completamente personalizado</li>
-                            <li><span class="check">✓</span> Dominio .com</li>
-                            <li><span class="check">✓</span> Hosting de alta velocidad</li>
-                            <li><span class="check">✓</span> SEO optimizado</li>
-                            <li><span class="check">✓</span> Formularios de contacto</li>
-                            <li><span class="check">✓</span> Integración con WhatsApp</li>
-                            <li><span class="check">✓</span> Personalización avanzada</li>
-                            <li><span class="check">✓</span> Optimización responsive</li>
-                            <li><span class="check">✓</span> 3 cambios después de la entrega</li>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20quiero%20elegir%20el%20paquete%20BUSINESS%20de%20Q1%2C700.%20%C2%BFC%C3%B3mo%20iniciamos%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">Elegir Business</a>
-                        </div>
-                    </div>
-
-                    <!-- Paquete 3: ECOMMERCE -->
-                    <div class="pricing-card fade-in">
-                        <div class="pricing-header">
-                            <span class="package-num">03</span>
-                            <h3>ECOMMERCE</h3>
-                            <p class="pricing-desc">Para negocios que quieren vender productos online de forma profesional.</p>
-                            <div class="price-box">
-                                <span class="currency">Q</span>
-                                <span class="amount">3,500</span>
-                            </div>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Tienda online profesional</li>
-                            <li><span class="check">✓</span> Diseño responsive</li>
-                            <li><span class="check">✓</span> Dominio .com</li>
-                            <li><span class="check">✓</span> Hosting</li>
-                            <li><span class="check">✓</span> Catálogo de productos</li>
-                            <li><span class="check">✓</span> Carrito de compras</li>
-                            <li><span class="check">✓</span> Integración de pagos</li>
-                            <li><span class="check">✓</span> Confirmación de pedidos</li>
-                            <li><span class="check">✓</span> SEO para e-commerce</li>
-                            <li><span class="check">✓</span> Panel administrativo</li>
-                            <li><span class="check">✓</span> Integración con WhatsApp</li>
-                            <li><span class="check">✓</span> Configuración inicial</li>
-                        </ul>
-                        <div class="pricing-footer">
-                            <a href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20interesa%20desarrollar%20mi%20tienda%20online%20con%20el%20paquete%20ECOMMERCE%20de%20Q3%2C500." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">Crear mi tienda</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN DE PROYECTOS -->
-        <section id="proyectos" class="section">
-            <div class="container">
-                <div class="section-header text-center fade-in">
-                    <span class="section-tag">PORTAFOLIO</span>
-                    <h2 class="section-title">Proyectos que hemos desarrollado</h2>
-                    <p class="section-subtitle">Casos de éxito y plataformas diseñadas con atención al mínimo detalle.</p>
-                </div>
-
-                <div class="grid grid-3">
-                    <!-- Card 1 -->
-                    <article class="project-card fade-in">
-                        <div class="project-image-placeholder">
-                            <div class="project-badge-tag">E-Commerce</div>
-                            <div class="mockup-ui">
-                                <div class="mockup-bar"></div>
-                                <div class="mockup-content-grid">
-                                    <div class="mockup-box"></div>
-                                    <div class="mockup-box"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Kadosh</h3>
-                            <span class="project-category">Tienda Online de Moda</span>
-                            <p>Plataforma de comercio electrónico con catálogo interactivo, carrito dinámico y checkout rápido optimizado para compras móviles.</p>
-                            <a href="https://kadoshguate.com" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary">Ver proyecto &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 2 -->
-                    <article class="project-card fade-in">
-                        <div class="project-image-placeholder">
-                            <div class="project-badge-tag">Sistema Web</div>
-                            <div class="mockup-ui">
-                                <div class="mockup-bar"></div>
-                                <div class="mockup-content-grid">
-                                    <div class="mockup-box full"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Gestor Herramientas JAAP S.A</h3>
-                            <span class="project-category">Sistema Web</span>
-                            <p>Sistema Web enfocado en la gestión de herramientas para empresa de construcción</p>
-                            <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary">Ver proyecto &rarr;</a>
-                        </div>
-                    </article>
-
-                    <!-- Card 3 -->
-                    <article class="project-card fade-in">
-                        <div class="project-image-placeholder">
-                            <div class="project-badge-tag">Sitio Web</div>
-                            <div class="mockup-ui">
-                                <div class="mockup-bar"></div>
-                                <div class="mockup-content-grid">
-                                    <div class="mockup-box"></div>
-                                    <div class="mockup-box"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>TutiMami</h3>
-                            <span class="project-category">Sitio Web Corporativo</span>
-                            <p>Diseño web elegante enfocado en la conversión, catálogo de servicios de belleza y reserva directa mediante WhatsApp.</p>
-                            <a href="https://tutimami-landing.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary">Ver proyecto &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN: POR QUÉ BYTESCRIPT -->
-        <section id="nosotros" class="section section-bordered">
-            <div class="container">
-                <div class="section-header text-center fade-in">
-                    <span class="section-tag">NUESTRO VALOR</span>
-                    <h2 class="section-title">No solo hacemos páginas web. Construimos herramientas para hacer crecer negocios.</h2>
-                </div>
-
-                <div class="grid grid-3">
-                    <div class="feature-item fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
-                        </div>
-                        <h4>Diseño pensado para convertir</h4>
-                        <p>Cada elemento, botón y texto tiene una razón estratégica de existir para transformar visitantes en clientes.</p>
-                    </div>
-
-                    <div class="feature-item fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                        </div>
-                        <h4>Código limpio</h4>
-                        <p>Desarrollamos soluciones ultra rápidas, mantenibles, seguras y escalables sin sobrecarga de librerías innecesarias.</p>
-                    </div>
-
-                    <div class="feature-item fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                        </div>
-                        <h4>Diseño responsive</h4>
-                        <p>La experiencia de usuario funciona de forma adaptativa y perfecta en móviles, tablets y computadoras de escritorio.</p>
-                    </div>
-
-                    <div class="feature-item fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        </div>
-                        <h4>SEO Local</h4>
-                        <p>Construimos sitios estructurados técnicamente para ser indexados de manera óptima por los algoritmos de Google.</p>
-                    </div>
-
-                    <div class="feature-item fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                        </div>
-                        <h4>Comunicación directa</h4>
-                        <p>Trato cercano y fluido. Mantente informado del avance de tu proyecto sin intermediarios ni tecnicismos confusos.</p>
-                    </div>
-
-                    <div class="feature-item fade-in">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-                        </div>
-                        <h4>Soporte</h4>
-                        <p>Acompañamiento técnico y mantenimiento post-entrega para asegurar que tu plataforma opere sin contratiempos.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROCESO DE TRABAJO -->
-        <section id="proceso" class="section">
-            <div class="container">
-                <div class="section-header text-center fade-in">
-                    <span class="section-tag">METODOLOGÍA</span>
-                    <h2 class="section-title">Cómo trabajamos paso a paso</h2>
-                    <p class="section-subtitle">Un flujo claro y organizado para llevar tu idea a la realidad en tiempo récord.</p>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-step fade-in">
-                        <div class="timeline-number">01</div>
-                        <div class="timeline-content">
-                            <h3>Descubrimiento</h3>
-                            <p>Entendemos a fondo tu negocio, tus objetivos comerciales y tus necesidades para trazar la estrategia adecuada.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-step fade-in">
-                        <div class="timeline-number">02</div>
-                        <div class="timeline-content">
-                            <h3>Diseño</h3>
-                            <p>Creamos la estructura visual, la arquitectura de contenidos y la experiencia de usuario antes de escribir código.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-step fade-in">
-                        <div class="timeline-number">03</div>
-                        <div class="timeline-content">
-                            <h3>Desarrollo</h3>
-                            <p>Convertimos el diseño en un producto digital funcional, seguro, rápido y perfectamente adaptable a móviles.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-step fade-in">
-                        <div class="timeline-number">04</div>
-                        <div class="timeline-content">
-                            <h3>Lanzamiento</h3>
-                            <p>Publicamos el proyecto en tu dominio, realizamos las configuraciones finales de SEO e impulsamos tu sitio.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    <!-- TESTIMONIOS -->
-
-    <section class="section section-bordered">
-        <div class="container">
-        <div class="section-header text-center fade-in">
-            <span class="section-tag">REFERENCIAS</span>
-            <h2 class="section-title">Experiencias que hablan por nosotros</h2>
-            <p class="section-description">
+<div class="hero-cta-group fade-in">
+<a class="btn btn-primary" data-en="Request a quote" data-es="Solicitar una cotización" data-i18n="t13" href="#contacto">Solicitar una cotización</a>
+<a class="btn btn-tertiary" data-en="View our services →" data-es="Ver nuestros servicios →" data-i18n="t14" href="#servicios">Ver nuestros servicios →</a>
+</div>
+</div>
+<!-- Elemento Visual Tecnológico CSS (IDE Interface Abstracta) -->
+<div class="hero-visual fade-in">
+<div class="ide-frame">
+<div class="ide-header">
+<span class="dot red"></span>
+<span class="dot yellow"></span>
+<span class="dot green"></span>
+<span class="ide-title">ByteScript — Core.ts</span>
+</div>
+<div class="ide-body">
+<div class="code-line"><span class="c-keyword">import</span> { Business, DigitalGrowth } <span class="c-keyword">from</span> <span class="c-string">'@bytescript/core'</span>;</div>
+<div class="code-line"> </div>
+<div class="code-line"><span class="c-keyword">async function</span> <span class="c-func">scaleBusiness</span>(client: Business) {</div>
+<div class="code-line">  <span class="c-keyword">const</span> solution = <span class="c-keyword">await</span> DigitalGrowth.<span class="c-func">deploy</span>({</div>
+<div class="code-line">    performance: <span class="c-string">'100%'</span>,</div>
+<div class="code-line">    seoOptimized: <span class="c-keyword">true</span>,</div>
+<div class="code-line">    conversionRate: <span class="c-string">'Maximum'</span></div>
+<div class="code-line">  });</div>
+<div class="code-line">  <span class="c-keyword">return</span> solution.<span class="c-func">generateResults</span>();</div>
+<div class="code-line">}</div>
+</div>
+<div class="ide-footer">
+<div class="status-indicator"><span class="pulse-green"></span> System Online</div>
+<div class="status-metric">Latency: 12ms</div>
+</div>
+</div>
+<div class="glow-backdrop"></div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: POR QUÉ TU NEGOCIO NECESITA PRESENCIA DIGITAL -->
+<section class="section section-bordered" id="beneficios">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="WHY GO DIGITAL" data-es="POR QUÉ DIGITALIZARTE" data-i18n="t15">POR QUÉ DIGITALIZARTE</span>
+<h2 class="section-title" data-en="Your business should not depend only on social media." data-es="Tu negocio no debería depender únicamente de las redes sociales." data-i18n="t16">Tu negocio no debería depender únicamente de las redes sociales.</h2>
+<p class="section-subtitle" data-en="Social media attracts attention, but your own website closes sales, builds authority, and belongs entirely to your brand." data-es="Las redes atraen atención, pero un sitio web propio cierra ventas, genera autoridad y pertenece completamente a tu marca." data-i18n="t17">Las redes atraen atención, pero un sitio web propio cierra ventas, genera autoridad y pertenece completamente a tu marca.</p>
+</div>
+<div class="grid grid-3">
+<div class="card card-interactive fade-in">
+<div class="card-icon">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+</div>
+<h3 data-en="Build Trust" data-es="Generar Confianza" data-i18n="t18">Generar Confianza</h3>
+<p data-en="A professional website gives customers a credible, dedicated place to learn about your business and take action." data-es="El 84% de los consumidores considera que una empresa con sitio web propio es más creíble que una que solo opera en redes sociales." data-i18n="t19">El 84% de los consumidores considera que una empresa con sitio web propio es más creíble que una que solo opera en redes sociales.</p>
+</div>
+<div class="card card-interactive fade-in">
+<div class="card-icon">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</div>
+<h3 data-en="Reach Customers 24/7" data-es="Captar Clientes 24/7" data-i18n="t20">Captar Clientes 24/7</h3>
+<p data-en="Your platform works around the clock. Customers can learn, request a quote, or buy at any time." data-es="Tu plataforma trabaja sin descanso. Los clientes pueden informarse, cotizar o comprar a cualquier hora del día." data-i18n="t21">Tu plataforma trabaja sin descanso. Los clientes pueden informarse, cotizar o comprar a cualquier hora del día.</p>
+</div>
+<div class="card card-interactive fade-in">
+<div class="card-icon">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg>
+</div>
+<h3 data-en="Get Found on Google" data-es="Aparecer en Google" data-i18n="t22">Aparecer en Google</h3>
+<p data-en="We structure your site to improve search visibility so customers can find you when they need what you offer." data-es="Posicionamos tu empresa en las búsquedas locales. Aparece exactamente cuando las personas buscan lo que tú vendes." data-i18n="t23">Posicionamos tu empresa en las búsquedas locales. Aparece exactamente cuando las personas buscan lo que tú vendes.</p>
+</div>
+<div class="card card-interactive fade-in">
+<div class="card-icon">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</div>
+<h3 data-en="Make Contact Easy" data-es="Facilitar el Contacto" data-i18n="t24">Facilitar el Contacto</h3>
+<p data-en="Give customers direct ways to reach you through interactive forms and preconfigured messaging buttons." data-es="Rutas directas de comunicación con tus clientes mediante formularios interactivos y botones WhatsApp preconfigurados." data-i18n="t25">Rutas directas de comunicación con tus clientes mediante formularios interactivos y botones WhatsApp preconfigurados.</p>
+</div>
+<div class="card card-interactive fade-in">
+<div class="card-icon">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+</div>
+<h3 data-en="Stand Out" data-es="Diferenciación Única" data-i18n="t26">Diferenciación Única</h3>
+<p data-en="Move beyond generic templates with a visual identity designed around the real value of your brand." data-es="Escapa de las plantillas genéricas. Diseñamos una identidad visual exclusiva que refleja el valor real de tu marca." data-i18n="t27">Escapa de las plantillas genéricas. Diseñamos una identidad visual exclusiva que refleja el valor real de tu marca.</p>
+</div>
+<div class="card card-interactive fade-in">
+<div class="card-icon">
+<svg fill="none" height="28" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="28"><rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+</div>
+<h3 data-en="Own Your Sales Channel" data-es="Canal Propio de Ventas" data-i18n="t28">Canal Propio de Ventas</h3>
+<p data-en="Stop depending entirely on algorithms and third-party platforms. Your website is an asset your business controls." data-es="No dependes de los cambios de algoritmo ni de las políticas de terceros. Tu plataforma es un activo 100% de tu empresa." data-i18n="t29">No dependes de los cambios de algoritmo ni de las políticas de terceros. Tu plataforma es un activo 100% de tu empresa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: QUÉ HACEMOS -->
+<section class="section" id="servicios">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="SERVICES" data-es="SERVICIOS" data-i18n="t30">SERVICIOS</span>
+<h2 class="section-title" data-en="High-quality digital solutions" data-es="Soluciones digitales de alto nivel" data-i18n="t31">Soluciones digitales de alto nivel</h2>
+<p class="section-subtitle" data-en="We build fast, secure platforms designed specifically around your business goals." data-es="Construimos plataformas rápidas, seguras y diseñadas específicamente para cumplir tus metas de negocio." data-i18n="t32">Construimos plataformas rápidas, seguras y diseñadas específicamente para cumplir tus metas de negocio.</p>
+</div>
+<div class="grid grid-2">
+<div class="service-card fade-in">
+<div class="service-header">
+<div class="service-icon">
+<svg fill="none" height="32" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="32"><rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+</div>
+<h3 data-en="Web Development" data-es="Desarrollo Web" data-i18n="t33">Desarrollo Web</h3>
+</div>
+<p data-en="Modern, fast, fully responsive websites optimized for search and designed to represent your business professionally." data-es="Sitios web modernos, ultrarrápidos, totalmente responsive y optimizados para buscadores. Creamos la carta de presentación perfecta para tu empresa." data-i18n="t34">Sitios web modernos, ultrarrápidos, totalmente responsive y optimizados para buscadores. Creamos la carta de presentación perfecta para tu empresa.</p>
+</div>
+<div class="service-card fade-in">
+<div class="service-header">
+<div class="service-icon">
+<svg fill="none" height="32" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="32"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+</div>
+<h3>Ecommerce</h3>
+</div>
+<p data-en="Professional online stores built to showcase products, manage shopping carts, and receive orders efficiently." data-es="Tiendas online profesionales preparadas para mostrar catálogos de productos, gestionar carritos de compra y recibir pedidos de forma eficiente." data-i18n="t35">Tiendas online profesionales preparadas para mostrar catálogos de productos, gestionar carritos de compra y recibir pedidos de forma eficiente.</p>
+</div>
+<div class="service-card fade-in">
+<div class="service-header">
+<div class="service-icon">
+<svg fill="none" height="32" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="32"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+</div>
+<h3 data-en="Custom Software" data-es="Sistemas Personalizados" data-i18n="t36">Sistemas Personalizados</h3>
+</div>
+<p data-en="Custom web systems built around your workflow, including internal automation, management dashboards, and specialized business tools." data-es="Desarrollo de sistemas web a la medida. Automatizamos procesos internos, paneles de gestión y herramientas específicas adaptadas a tu flujo de trabajo." data-i18n="t37">Desarrollo de sistemas web a la medida. Automatizamos procesos internos, paneles de gestión y herramientas específicas adaptadas a tu flujo de trabajo.</p>
+</div>
+<div class="service-card fade-in">
+<div class="service-header">
+<div class="service-icon">
+<svg fill="none" height="32" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="32"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+</div>
+<h3 data-en="Website Redesign" data-es="Rediseño Web" data-i18n="t38">Rediseño Web</h3>
+</div>
+<p data-en="We modernize outdated websites and turn slow platforms into polished, conversion-focused digital experiences." data-es="Modernización de sitios web obsoletos. Transformamos plataformas lentas o desactualizadas en herramientas de conversión con UI/UX de nivel mundial." data-i18n="t39">Modernización de sitios web obsoletos. Transformamos plataformas lentas o desactualizadas en herramientas de conversión con UI/UX de nivel mundial.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN DE PAQUETES -->
+<section class="section section-bordered" id="precios">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="TRANSPARENT PRICING" data-es="INVERSIÓN TRANSPARENTE" data-i18n="t40">INVERSIÓN TRANSPARENTE</span>
+<h2 class="section-title" data-en="Packages built for your stage of business" data-es="Paquetes adaptados a la etapa de tu negocio" data-i18n="t41">Paquetes adaptados a la etapa de tu negocio</h2>
+<p class="section-subtitle" data-en="No hidden costs. Every project is delivered with quality and performance in mind." data-es="Sin costos ocultos. Proyectos entregados con máxima calidad y optimización." data-i18n="t42">Sin costos ocultos. Proyectos entregados con máxima calidad y optimización.</p>
+</div>
+<div class="grid grid-3 pricing-grid">
+<!-- Paquete 1: STARTER -->
+<div class="pricing-card fade-in">
+<div class="pricing-header">
+<span class="package-num">01</span>
+<h3>STARTER</h3>
+<p class="pricing-desc" data-en="Ideal for businesses starting their digital presence." data-es="Ideal para negocios que necesitan comenzar su presencia digital." data-i18n="t43">Ideal para negocios que necesitan comenzar su presencia digital.</p>
+<div class="price-box" data-price-gtq="1000" data-price-usd="130">
+<span class="currency">Q</span>
+<span class="amount">1,000</span>
+</div>
+</div>
+<ul class="pricing-features">
+<li data-en="Professional landing page" data-es="Landing page profesional" data-i18n="t44"><span class="check">✓</span> Landing page profesional</li>
+<li data-en="Responsive design" data-es="Diseño responsive" data-i18n="t45"><span class="check">✓</span> Diseño responsive</li>
+<li data-en=".com domain" data-es="Dominio .com" data-i18n="t46"><span class="check">✓</span> Dominio .com</li>
+<li data-en="Hosting included" data-es="Hosting incluido" data-i18n="t47"><span class="check">✓</span> Hosting incluido</li>
+<li data-en="WhatsApp button" data-es="Botón de WhatsApp" data-i18n="t48"><span class="check">✓</span> Botón de WhatsApp</li>
+<li data-en="Contact form" data-es="Formulario de contacto" data-i18n="t49"><span class="check">✓</span> Formulario de contacto</li>
+<li data-en="Basic SEO" data-es="SEO básico" data-i18n="t50"><span class="check">✓</span> SEO básico</li>
+<li data-en="3 post-delivery revisions" data-es="3 cambios después de la entrega" data-i18n="t51"><span class="check">✓</span> 3 cambios después de la entrega</li>
+</ul>
+<div class="pricing-footer">
+<a class="btn btn-secondary btn-block" data-en="Choose Starter" data-es="Quiero este paquete" data-i18n="t52" href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20interesa%20el%20paquete%20STARTER%20de%20Q1%2C000.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20detalles%3F" rel="noopener noreferrer" target="_blank">Quiero este paquete</a>
+</div>
+</div>
+<!-- Paquete 2: BUSINESS (Destacado) -->
+<div class="pricing-card featured fade-in">
+<div class="popular-badge" data-en="MOST POPULAR" data-es="MÁS SOLICITADO" data-i18n="t53">MÁS SOLICITADO</div>
+<div class="pricing-header">
+<span class="package-num">02</span>
+<h3>BUSINESS</h3>
+<p class="pricing-desc" data-en="Ideal for businesses that need a more complete digital presence." data-es="Ideal para negocios que quieren una presencia digital más completa." data-i18n="t54">Ideal para negocios que quieren una presencia digital más completa.</p>
+<div class="price-box" data-price-gtq="1700" data-price-usd="220">
+<span class="currency">Q</span>
+<span class="amount">1,700</span>
+</div>
+</div>
+<ul class="pricing-features">
+<li data-en="Premium landing page" data-es="Landing page premium" data-i18n="t55"><span class="check">✓</span> Landing page premium</li>
+<li data-en="Fully custom design" data-es="Diseño completamente personalizado" data-i18n="t56"><span class="check">✓</span> Diseño completamente personalizado</li>
+<li data-en=".com domain" data-es="Dominio .com" data-i18n="t57"><span class="check">✓</span> Dominio .com</li>
+<li data-en="High-speed hosting" data-es="Hosting de alta velocidad" data-i18n="t58"><span class="check">✓</span> Hosting de alta velocidad</li>
+<li data-en="Optimized SEO" data-es="SEO optimizado" data-i18n="t59"><span class="check">✓</span> SEO optimizado</li>
+<li data-en="Contact forms" data-es="Formularios de contacto" data-i18n="t60"><span class="check">✓</span> Formularios de contacto</li>
+<li data-en="WhatsApp integration" data-es="Integración con WhatsApp" data-i18n="t61"><span class="check">✓</span> Integración con WhatsApp</li>
+<li data-en="Advanced customization" data-es="Personalización avanzada" data-i18n="t62"><span class="check">✓</span> Personalización avanzada</li>
+<li data-en="Responsive optimization" data-es="Optimización responsive" data-i18n="t63"><span class="check">✓</span> Optimización responsive</li>
+<li data-en="3 post-delivery revisions" data-es="3 cambios después de la entrega" data-i18n="t64"><span class="check">✓</span> 3 cambios después de la entrega</li>
+</ul>
+<div class="pricing-footer">
+<a class="btn btn-primary btn-block" data-en="Choose Business" data-es="Elegir Business" data-i18n="t65" href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20quiero%20elegir%20el%20paquete%20BUSINESS%20de%20Q1%2C700.%20%C2%BFC%C3%B3mo%20iniciamos%3F" rel="noopener noreferrer" target="_blank">Elegir Business</a>
+</div>
+</div>
+<!-- Paquete 3: ECOMMERCE -->
+<div class="pricing-card fade-in">
+<div class="pricing-header">
+<span class="package-num">03</span>
+<h3>ECOMMERCE</h3>
+<p class="pricing-desc" data-en="For businesses ready to sell products online professionally." data-es="Para negocios que quieren vender productos online de forma profesional." data-i18n="t66">Para negocios que quieren vender productos online de forma profesional.</p>
+<div class="price-box" data-price-gtq="3500" data-price-usd="460">
+<span class="currency">Q</span>
+<span class="amount">3,500</span>
+</div>
+</div>
+<ul class="pricing-features">
+<li data-en="Professional online store" data-es="Tienda online profesional" data-i18n="t67"><span class="check">✓</span> Tienda online profesional</li>
+<li data-en="Responsive design" data-es="Diseño responsive" data-i18n="t68"><span class="check">✓</span> Diseño responsive</li>
+<li data-en=".com domain" data-es="Dominio .com" data-i18n="t69"><span class="check">✓</span> Dominio .com</li>
+<li data-en="Hosting" data-es="Hosting" data-i18n="t70"><span class="check">✓</span> Hosting</li>
+<li data-en="Product catalog" data-es="Catálogo de productos" data-i18n="t71"><span class="check">✓</span> Catálogo de productos</li>
+<li data-en="Shopping cart" data-es="Carrito de compras" data-i18n="t72"><span class="check">✓</span> Carrito de compras</li>
+<li data-en="Payment integration" data-es="Integración de pagos" data-i18n="t73"><span class="check">✓</span> Integración de pagos</li>
+<li data-en="Order confirmations" data-es="Confirmación de pedidos" data-i18n="t74"><span class="check">✓</span> Confirmación de pedidos</li>
+<li data-en="E-commerce SEO" data-es="SEO para e-commerce" data-i18n="t75"><span class="check">✓</span> SEO para e-commerce</li>
+<li data-en="Admin dashboard" data-es="Panel administrativo" data-i18n="t76"><span class="check">✓</span> Panel administrativo</li>
+<li data-en="WhatsApp integration" data-es="Integración con WhatsApp" data-i18n="t77"><span class="check">✓</span> Integración con WhatsApp</li>
+<li data-en="Initial setup" data-es="Configuración inicial" data-i18n="t78"><span class="check">✓</span> Configuración inicial</li>
+</ul>
+<div class="pricing-footer">
+<a class="btn btn-secondary btn-block" data-en="Build my store" data-es="Crear mi tienda" data-i18n="t79" href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20interesa%20desarrollar%20mi%20tienda%20online%20con%20el%20paquete%20ECOMMERCE%20de%20Q3%2C500." rel="noopener noreferrer" target="_blank">Crear mi tienda</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN DE PROYECTOS -->
+<section class="section" id="proyectos">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="PORTFOLIO" data-es="PORTAFOLIO" data-i18n="t80">PORTAFOLIO</span>
+<h2 class="section-title" data-en="Projects we have built" data-es="Proyectos que hemos desarrollado" data-i18n="t81">Proyectos que hemos desarrollado</h2>
+<p class="section-subtitle" data-en="Real projects and platforms built with attention to every detail." data-es="Casos de éxito y plataformas diseñadas con atención al mínimo detalle." data-i18n="t82">Casos de éxito y plataformas diseñadas con atención al mínimo detalle.</p>
+</div>
+<div class="grid grid-3">
+<!-- Card 1 -->
+<article class="project-card fade-in">
+<div class="project-image-placeholder">
+<div class="project-badge-tag">E-Commerce</div>
+<div class="mockup-ui">
+<div class="mockup-bar"></div>
+<div class="mockup-content-grid">
+<div class="mockup-box"></div>
+<div class="mockup-box"></div>
+</div>
+</div>
+</div>
+<div class="project-info">
+<h3>Kadosh</h3>
+<span class="project-category" data-en="Fashion E-commerce Store" data-es="Tienda Online de Moda" data-i18n="t83">Tienda Online de Moda</span>
+<p data-en="E-commerce platform with an interactive catalog, dynamic cart, and fast mobile-optimized checkout." data-es="Plataforma de comercio electrónico con catálogo interactivo, carrito dinámico y checkout rápido optimizado para compras móviles." data-i18n="t84">Plataforma de comercio electrónico con catálogo interactivo, carrito dinámico y checkout rápido optimizado para compras móviles.</p>
+<a class="btn btn-tertiary" data-en="View project →" data-es="Ver proyecto →" data-i18n="t85" href="https://kadoshguate.com" rel="noopener noreferrer" target="_blank">Ver proyecto →</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="project-card fade-in">
+<div class="project-image-placeholder">
+<div class="project-badge-tag" data-en="Web System" data-es="Sistema Web" data-i18n="t86">Sistema Web</div>
+<div class="mockup-ui">
+<div class="mockup-bar"></div>
+<div class="mockup-content-grid">
+<div class="mockup-box full"></div>
+</div>
+</div>
+</div>
+<div class="project-info">
+<h3>Gestor Herramientas JAAP S.A</h3>
+<span class="project-category" data-en="Web System" data-es="Sistema Web" data-i18n="t87">Sistema Web</span>
+<p data-en="A web system focused on equipment management for a construction company." data-es="Sistema Web enfocado en la gestión de herramientas para empresa de construcción" data-i18n="t88">Sistema Web enfocado en la gestión de herramientas para empresa de construcción</p>
+<a class="btn btn-tertiary" data-en="View project →" data-es="Ver proyecto →" data-i18n="t89" href="" rel="noopener noreferrer" target="_blank">Ver proyecto →</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="project-card fade-in">
+<div class="project-image-placeholder">
+<div class="project-badge-tag" data-en="Website" data-es="Sitio Web" data-i18n="t90">Sitio Web</div>
+<div class="mockup-ui">
+<div class="mockup-bar"></div>
+<div class="mockup-content-grid">
+<div class="mockup-box"></div>
+<div class="mockup-box"></div>
+</div>
+</div>
+</div>
+<div class="project-info">
+<h3>TutiMami</h3>
+<span class="project-category" data-en="Corporate Website" data-es="Sitio Web Corporativo" data-i18n="t91">Sitio Web Corporativo</span>
+<p data-en="Elegant conversion-focused website with a beauty services catalog and direct booking through WhatsApp." data-es="Diseño web elegante enfocado en la conversión, catálogo de servicios de belleza y reserva directa mediante WhatsApp." data-i18n="t92">Diseño web elegante enfocado en la conversión, catálogo de servicios de belleza y reserva directa mediante WhatsApp.</p>
+<a class="btn btn-tertiary" data-en="View project →" data-es="Ver proyecto →" data-i18n="t93" href="https://tutimami-landing.vercel.app" rel="noopener noreferrer" target="_blank">Ver proyecto →</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: POR QUÉ BYTESCRIPT -->
+<section class="section section-bordered" id="nosotros">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="OUR VALUE" data-es="NUESTRO VALOR" data-i18n="t94">NUESTRO VALOR</span>
+<h2 class="section-title" data-en="We do more than build websites. We build tools that help businesses grow." data-es="No solo hacemos páginas web. Construimos herramientas para hacer crecer negocios." data-i18n="t95">No solo hacemos páginas web. Construimos herramientas para hacer crecer negocios.</h2>
+</div>
+<div class="grid grid-3">
+<div class="feature-item fade-in">
+<div class="feature-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"></path></svg>
+</div>
+<h4 data-en="Conversion-focused design" data-es="Diseño pensado para convertir" data-i18n="t96">Diseño pensado para convertir</h4>
+<p data-en="Every element, button, and line of copy is designed with a purpose: turning visitors into customers." data-es="Cada elemento, botón y texto tiene una razón estratégica de existir para transformar visitantes en clientes." data-i18n="t97">Cada elemento, botón y texto tiene una razón estratégica de existir para transformar visitantes en clientes.</p>
+</div>
+<div class="feature-item fade-in">
+<div class="feature-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+</div>
+<h4 data-en="Clean code" data-es="Código limpio" data-i18n="t98">Código limpio</h4>
+<p data-en="We build fast, maintainable, secure, and scalable solutions without unnecessary library overhead." data-es="Desarrollamos soluciones ultra rápidas, mantenibles, seguras y escalables sin sobrecarga de librerías innecesarias." data-i18n="t99">Desarrollamos soluciones ultra rápidas, mantenibles, seguras y escalables sin sobrecarga de librerías innecesarias.</p>
+</div>
+<div class="feature-item fade-in">
+<div class="feature-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><rect height="20" rx="2" ry="2" width="14" x="5" y="2"></rect><line x1="12" x2="12.01" y1="18" y2="18"></line></svg>
+</div>
+<h4 data-en="Responsive design" data-es="Diseño responsive" data-i18n="t100">Diseño responsive</h4>
+<p data-en="The experience adapts seamlessly across phones, tablets, and desktop computers." data-es="La experiencia de usuario funciona de forma adaptativa y perfecta en móviles, tablets y computadoras de escritorio." data-i18n="t101">La experiencia de usuario funciona de forma adaptativa y perfecta en móviles, tablets y computadoras de escritorio.</p>
+</div>
+<div class="feature-item fade-in">
+<div class="feature-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+</div>
+<h4 data-en="SEO" data-es="SEO Local" data-i18n="t102">SEO Local</h4>
+<p data-en="We build technically structured websites designed for effective search engine indexing." data-es="Construimos sitios estructurados técnicamente para ser indexados de manera óptima por los algoritmos de Google." data-i18n="t103">Construimos sitios estructurados técnicamente para ser indexados de manera óptima por los algoritmos de Google.</p>
+</div>
+<div class="feature-item fade-in">
+<div class="feature-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+</div>
+<h4 data-en="Direct communication" data-es="Comunicación directa" data-i18n="t104">Comunicación directa</h4>
+<p data-en="Clear, direct communication keeps you informed about your project without unnecessary intermediaries or confusing jargon." data-es="Trato cercano y fluido. Mantente informado del avance de tu proyecto sin intermediarios ni tecnicismos confusos." data-i18n="t105">Trato cercano y fluido. Mantente informado del avance de tu proyecto sin intermediarios ni tecnicismos confusos.</p>
+</div>
+<div class="feature-item fade-in">
+<div class="feature-icon">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+</div>
+<h4 data-en="Support" data-es="Soporte" data-i18n="t106">Soporte</h4>
+<p data-en="Technical support and post-delivery maintenance to keep your platform running smoothly." data-es="Acompañamiento técnico y mantenimiento post-entrega para asegurar que tu plataforma opere sin contratiempos." data-i18n="t107">Acompañamiento técnico y mantenimiento post-entrega para asegurar que tu plataforma opere sin contratiempos.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROCESO DE TRABAJO -->
+<section class="section" id="proceso">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="METHODOLOGY" data-es="METODOLOGÍA" data-i18n="t109">METODOLOGÍA</span>
+<h2 class="section-title" data-en="How we work, step by step" data-es="Cómo trabajamos paso a paso" data-i18n="t110">Cómo trabajamos paso a paso</h2>
+<p class="section-subtitle" data-en="A clear, organized workflow to turn your idea into a finished product efficiently." data-es="Un flujo claro y organizado para llevar tu idea a la realidad en tiempo récord." data-i18n="t111">Un flujo claro y organizado para llevar tu idea a la realidad en tiempo récord.</p>
+</div>
+<div class="timeline">
+<div class="timeline-step fade-in">
+<div class="timeline-number">01</div>
+<div class="timeline-content">
+<h3 data-en="Discovery" data-es="Descubrimiento" data-i18n="t112">Descubrimiento</h3>
+<p data-en="We learn about your business, goals, and requirements to define the right strategy." data-es="Entendemos a fondo tu negocio, tus objetivos comerciales y tus necesidades para trazar la estrategia adecuada." data-i18n="t113">Entendemos a fondo tu negocio, tus objetivos comerciales y tus necesidades para trazar la estrategia adecuada.</p>
+</div>
+</div>
+<div class="timeline-step fade-in">
+<div class="timeline-number">02</div>
+<div class="timeline-content">
+<h3 data-en="Design" data-es="Diseño" data-i18n="t114">Diseño</h3>
+<p data-en="We create the visual structure, content architecture, and user experience before writing code." data-es="Creamos la estructura visual, la arquitectura de contenidos y la experiencia de usuario antes de escribir código." data-i18n="t115">Creamos la estructura visual, la arquitectura de contenidos y la experiencia de usuario antes de escribir código.</p>
+</div>
+</div>
+<div class="timeline-step fade-in">
+<div class="timeline-number">03</div>
+<div class="timeline-content">
+<h3 data-en="Development" data-es="Desarrollo" data-i18n="t116">Desarrollo</h3>
+<p data-en="We turn the design into a functional, secure, fast, and fully responsive digital product." data-es="Convertimos el diseño en un producto digital funcional, seguro, rápido y perfectamente adaptable a móviles." data-i18n="t117">Convertimos el diseño en un producto digital funcional, seguro, rápido y perfectamente adaptable a móviles.</p>
+</div>
+</div>
+<div class="timeline-step fade-in">
+<div class="timeline-number">04</div>
+<div class="timeline-content">
+<h3 data-en="Launch" data-es="Lanzamiento" data-i18n="t118">Lanzamiento</h3>
+<p data-en="We deploy the project to your domain, complete final SEO setup, and get your site ready for users." data-es="Publicamos el proyecto en tu dominio, realizamos las configuraciones finales de SEO e impulsamos tu sitio." data-i18n="t119">Publicamos el proyecto en tu dominio, realizamos las configuraciones finales de SEO e impulsamos tu sitio.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIOS -->
+<section class="section section-bordered">
+<div class="container">
+<div class="section-header text-center fade-in">
+<span class="section-tag" data-en="TESTIMONIALS" data-es="REFERENCIAS" data-i18n="t120">REFERENCIAS</span>
+<h2 class="section-title" data-en="Experiences that speak for our work" data-es="Experiencias que hablan por nosotros" data-i18n="t121">Experiencias que hablan por nosotros</h2>
+<p class="section-description" data-en="A few examples of how our projects help businesses improve their digital presence and workflows." data-es="Algunos ejemplos de cómo nuestros proyectos ayudan a los negocios a mejorar su presencia y procesos digitales." data-i18n="t122">
                 Algunos ejemplos de cómo nuestros proyectos ayudan a los negocios
                 a mejorar su presencia y procesos digitales.
             </p>
-        </div>
-
-        <div class="grid grid-3">
-
-            <!-- TESTIMONIO 1 -->
-            <div class="card testimonial-card fade-in">
-                <div class="quote-mark">“</div>
-
-                <p class="testimonial-text">
+</div>
+<div class="grid grid-3">
+<!-- TESTIMONIO 1 -->
+<div class="card testimonial-card fade-in">
+<div class="quote-mark">“</div>
+<p class="testimonial-text" data-en="ByteScript transformed our idea into a professional, modern, and easy-to-use web experience. The result helped us present our business much more professionally." data-es="ByteScript transformó nuestra idea en una experiencia web profesional, moderna y fácil de utilizar. El resultado nos permitió presentar nuestro negocio de una forma mucho más profesional." data-i18n="t123">
                     ByteScript transformó nuestra idea en una experiencia web
                     profesional, moderna y fácil de utilizar. El resultado nos
                     permitió presentar nuestro negocio de una forma mucho más
                     profesional.
                 </p>
-
-                <div class="testimonial-author">
-                    <div class="avatar-placeholder">KG</div>
-
-                    <div>
-                        <strong>Cliente Kadosh</strong>
-                        <span>Ecommerce</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TESTIMONIO 2 -->
-            <div class="card testimonial-card fade-in">
-                <div class="quote-mark">“</div>
-
-                <p class="testimonial-text">
+<div class="testimonial-author">
+<div class="avatar-placeholder">KG</div>
+<div>
+<strong data-en="Kadosh Client" data-es="Cliente Kadosh" data-i18n="t124">Cliente Kadosh</strong>
+<span>Ecommerce</span>
+</div>
+</div>
+</div>
+<!-- TESTIMONIO 2 -->
+<div class="card testimonial-card fade-in">
+<div class="quote-mark">“</div>
+<p class="testimonial-text" data-en="The project gave us a clearer, more professional digital presence. The design matched our identity and works very well on mobile devices." data-es="El proyecto nos ayudó a tener una presencia digital mucho más clara y profesional. El diseño se adaptó a nuestra identidad y la experiencia funciona muy bien desde dispositivos móviles." data-i18n="t125">
                     El proyecto nos ayudó a tener una presencia digital mucho
                     más clara y profesional. El diseño se adaptó a nuestra
                     identidad y la experiencia funciona muy bien desde
                     dispositivos móviles.
                 </p>
-
-                <div class="testimonial-author">
-                    <div class="avatar-placeholder">OB</div>
-
-                    <div>
-                        <strong>Cliente Olam</strong>
-                        <span>Beauty & Wellness</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TESTIMONIO 3 -->
-            <div class="card testimonial-card fade-in">
-                <div class="quote-mark">“</div>
-
-                <p class="testimonial-text">
+<div class="testimonial-author">
+<div class="avatar-placeholder">OB</div>
+<div>
+<strong data-en="Olam Client" data-es="Cliente Olam" data-i18n="t126">Cliente Olam</strong>
+<span>Beauty &amp; Wellness</span>
+</div>
+</div>
+</div>
+<!-- TESTIMONIO 3 -->
+<div class="card testimonial-card fade-in">
+<div class="quote-mark">“</div>
+<p class="testimonial-text" data-en="We needed a digital solution tailored to our business, and the project helped us centralize our processes and work in a more organized way." data-es="Necesitábamos una solución digital adaptada a nuestro negocio y el proyecto nos permitió centralizar mejor nuestros procesos y trabajar de una manera más organizada." data-i18n="t127">
                     Necesitábamos una solución digital adaptada a nuestro
                     negocio y el proyecto nos permitió centralizar mejor
                     nuestros procesos y trabajar de una manera más organizada.
                 </p>
-
-                <div class="testimonial-author">
-                    <div class="avatar-placeholder">TM</div>
-
-                    <div>
-                        <strong>Cliente TutiMami</strong>
-                        <span>Solución empresarial</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    <!-- NOTA PARA DESARROLLO -->
-    <div class="testimonial-note fade-in">
-        <span>✦</span>
-        <p>
+<div class="testimonial-author">
+<div class="avatar-placeholder">TM</div>
+<div>
+<strong data-en="TutiMami Client" data-es="Cliente TutiMami" data-i18n="t128">Cliente TutiMami</strong>
+<span data-en="Business Solution" data-es="Solución empresarial" data-i18n="t129">Solución empresarial</span>
+</div>
+</div>
+</div>
+</div>
+<!-- NOTA PARA DESARROLLO -->
+<div class="testimonial-note fade-in">
+<span>✦</span>
+<p data-en="Already worked with us? Your experience could appear here." data-es="¿Ya trabajaste con nosotros? Tu experiencia puede aparecer aquí." data-i18n="t130">
             ¿Ya trabajaste con nosotros? Tu experiencia puede aparecer aquí.
         </p>
-    </div>
-
+</div>
 </div>
 </section>
-
-
-        <!-- SECCIÓN CONTACTO -->
-        <section id="contacto" class="section">
-            <div class="container">
-                <div class="contact-wrapper fade-in">
-                    <div class="contact-info">
-                        <span class="section-tag">CONTACTO DIRECTO</span>
-                        <h2>¿Tienes un proyecto en mente?</h2>
-                        <p>Cuéntanos qué necesitas y te ayudaremos a encontrar la solución adecuada para tu negocio.</p>
-                        
-                        <div class="direct-contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div>
-                                <span>WhatsApp Directo</span>
-                                <strong>+502 42023344</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Formulario con generación de mensaje hacia WhatsApp -->
-                    <form id="contact-form" class="contact-form" novalidate>
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo *</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
-                            <span class="error-msg" id="error-nombre">Por favor ingresa tu nombre</span>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="empresa">Empresa / Negocio</label>
-                                <input type="text" id="empresa" name="empresa" placeholder="Ej. Mi Negocio GT">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Correo electrónico *</label>
-                                <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required>
-                                <span class="error-msg" id="error-email">Ingresa un correo electrónico válido</span>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="whatsapp">Teléfono / WhatsApp *</label>
-                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ej. 1111-2222" required>
-                                <span class="error-msg" id="error-whatsapp">Ingresa tu número de teléfono</span>
-                            </div>
-                            <div class="form-group">
-                                <label for="tipo_proyecto">Tipo de proyecto *</label>
-                                <select id="tipo_proyecto" name="tipo_proyecto" required>
-                                    <option value="" disabled selected>Selecciona una opción</option>
-                                    <option value="Landing Page (Starter)">Landing Page (Starter)</option>
-                                    <option value="Sitio Web (Business)">Sitio Web (Business)</option>
-                                    <option value="Tienda Online (Ecommerce)">Tienda Online (Ecommerce)</option>
-                                    <option value="Sistema Personalizado">Sistema Personalizado</option>
-                                    <option value="Rediseño Web">Rediseño Web</option>
-                                </select>
-                                <span class="error-msg" id="error-tipo_proyecto">Selecciona un tipo de proyecto</span>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="presupuesto">Presupuesto aproximado</label>
-                            <select id="presupuesto" name="presupuesto">
-                                <option value="Q1,000 - Q1,700">Q1,000 - Q1,700</option>
-                                <option value="Q1,700 - Q3,500">Q1,700 - Q3,500</option>
-                                <option value="Q3,500+">Q3,500+</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="mensaje">Detalles del mensaje *</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre tus necesidades o ideas..." required></textarea>
-                            <span class="error-msg" id="error-mensaje">Por favor escribe los detalles de tu mensaje</span>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block">Solicitar cotización</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="#hero" class="brand-logo">
-                    <span class="logo-symbol">&lt;/&gt;</span> ByteScript<span class="logo-dot">.</span>
-                </a>
-                <p>Desarrollo web y soluciones digitales para negocios que quieren crecer.</p>
-            </div>
-
-            <div class="footer-links">
-                <h4>Navegación</h4>
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#precios">Paquetes</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p><strong>WhatsApp:</strong> +502 42023344</p>
-                <p>Guatemala, C.A.</p>
-            </div>
-        </div>
-
-        <div class="container footer-bottom">
-            <p>&copy; 2026 ByteScript. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo%20web." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
-            <path d="M16 2a13 13 0 0 0-11.25 19.5L3 29l7.71-1.68A13 13 0 1 0 16 2zm0 23.8a10.74 10.74 0 0 1-5.48-1.5l-.39-.23-4.57 1 1-4.46-.26-.42a10.76 10.76 0 1 1 9.7 5.61zm5.9-8.07c-.32-.16-1.92-.95-2.22-1.06s-.52-.16-.74.16-.85 1.06-1.04 1.28-.39.24-.71.08a9 9 0 0 1-2.63-1.62 9.92 9.92 0 0 1-1.82-2.27c-.19-.32 0-.49.15-.65s.32-.37.48-.56a2.18 2.18 0 0 0 .32-.53.59.59 0 0 0 0-.56c-.08-.16-.74-1.78-1-2.44s-.55-.56-.75-.57h-.64a1.23 1.23 0 0 0-.89.41 3.77 3.77 0 0 0-1.18 2.8 6.56 6.56 0 0 0 1.37 3.48 15 15 0 0 0 5.75 5.08c2.19.95 2.64.76 3.12.71a2.66 2.66 0 0 0 1.76-1.24 2.17 2.17 0 0 0 .15-1.24c-.08-.13-.24-.21-.56-.37z"/>
-        </svg>
-    </a>
-
-    <!-- Botón Volver Arriba -->
-    <button id="back-to-top" class="icon-btn back-to-top" aria-label="Volver arriba">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
-    </button>
-
-    <!-- Contenedor de Notificaciones Toast -->
-    <div id="toast-container" class="toast-container" aria-live="polite"></div>
+<!-- SECCIÓN CONTACTO -->
+<section class="section" id="contacto">
+<div class="container">
+<div class="contact-wrapper fade-in">
+<div class="contact-info">
+<span class="section-tag" data-en="DIRECT CONTACT" data-es="CONTACTO DIRECTO" data-i18n="t131">CONTACTO DIRECTO</span>
+<h2 data-en="Have a project in mind?" data-es="¿Tienes un proyecto en mente?" data-i18n="t132">¿Tienes un proyecto en mente?</h2>
+<p data-en="Tell us what you need and we will help you find the right solution for your business." data-es="Cuéntanos qué necesitas y te ayudaremos a encontrar la solución adecuada para tu negocio." data-i18n="t133">Cuéntanos qué necesitas y te ayudaremos a encontrar la solución adecuada para tu negocio.</p>
+<div class="direct-contact-item">
+<div class="contact-icon">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</div>
+<div>
+<span data-en="Direct WhatsApp" data-es="WhatsApp Directo" data-i18n="t134">WhatsApp Directo</span>
+<strong>+502 42023344</strong>
+</div>
+</div>
+</div>
+<!-- Formulario con generación de mensaje hacia WhatsApp -->
+<form class="contact-form" id="contact-form" novalidate="">
+<div class="form-group">
+<label data-en="Full name *" data-es="Nombre completo *" data-i18n="t135" for="nombre">Nombre completo *</label>
+<input data-placeholder-en="E.g. John Smith" data-placeholder-es="Ej. Juan Pérez" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required="" type="text"/>
+<span class="error-msg" data-en="Please enter your name" data-es="Por favor ingresa tu nombre" data-i18n="t136" id="error-nombre">Por favor ingresa tu nombre</span>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label data-en="Company / Business" data-es="Empresa / Negocio" data-i18n="t137" for="empresa">Empresa / Negocio</label>
+<input data-placeholder-en="E.g. My Business" data-placeholder-es="Ej. Mi Negocio GT" id="empresa" name="empresa" placeholder="Ej. Mi Negocio GT" type="text"/>
+</div>
+<div class="form-group">
+<label data-en="Email *" data-es="Correo electrónico *" data-i18n="t138" for="email">Correo electrónico *</label>
+<input data-placeholder-en="john@example.com" data-placeholder-es="juan@ejemplo.com" id="email" name="email" placeholder="juan@ejemplo.com" required="" type="email"/>
+<span class="error-msg" data-en="Enter a valid email address" data-es="Ingresa un correo electrónico válido" data-i18n="t139" id="error-email">Ingresa un correo electrónico válido</span>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label data-en="Phone / WhatsApp *" data-es="Teléfono / WhatsApp *" data-i18n="t140" for="whatsapp">Teléfono / WhatsApp *</label>
+<input data-placeholder-en="E.g. +1 555 123 4567" data-placeholder-es="Ej. 1111-2222" id="whatsapp" name="whatsapp" placeholder="Ej. 1111-2222" required="" type="tel"/>
+<span class="error-msg" data-en="Enter your phone number" data-es="Ingresa tu número de teléfono" data-i18n="t141" id="error-whatsapp">Ingresa tu número de teléfono</span>
+</div>
+<div class="form-group">
+<label data-en="Project type *" data-es="Tipo de proyecto *" data-i18n="t142" for="tipo_proyecto">Tipo de proyecto *</label>
+<select id="tipo_proyecto" name="tipo_proyecto" required="">
+<option data-en="Select an option" data-es="Selecciona una opción" data-i18n="t143" disabled="" selected="" value="">Selecciona una opción</option>
+<option value="Landing Page (Starter)">Landing Page (Starter)</option>
+<option data-en="Website (Business)" data-es="Sitio Web (Business)" data-i18n="t144" value="Sitio Web (Business)">Sitio Web (Business)</option>
+<option data-en="Online Store (E-commerce)" data-es="Tienda Online (Ecommerce)" data-i18n="t145" value="Tienda Online (Ecommerce)">Tienda Online (Ecommerce)</option>
+<option data-en="Custom Software" data-es="Sistema Personalizado" data-i18n="t146" value="Sistema Personalizado">Sistema Personalizado</option>
+<option data-en="Website Redesign" data-es="Rediseño Web" data-i18n="t147" value="Rediseño Web">Rediseño Web</option>
+</select>
+<span class="error-msg" data-en="Select a project type" data-es="Selecciona un tipo de proyecto" data-i18n="t148" id="error-tipo_proyecto">Selecciona un tipo de proyecto</span>
+</div>
+</div>
+<div class="form-group">
+<label data-en="Approximate budget" data-es="Presupuesto aproximado" data-i18n="t149" for="presupuesto">Presupuesto aproximado</label>
+<select id="presupuesto" name="presupuesto">
+<option value="Q1,000 - Q1,700">Q1,000 - Q1,700</option>
+<option value="Q1,700 - Q3,500">Q1,700 - Q3,500</option>
+<option value="Q3,500+">Q3,500+</option>
+</select>
+</div>
+<div class="form-group">
+<label data-en="Project details *" data-es="Detalles del mensaje *" data-i18n="t150" for="mensaje">Detalles del mensaje *</label>
+<textarea data-placeholder-en="Tell us more about your needs or ideas..." data-placeholder-es="Cuéntanos más sobre tus necesidades o ideas..." id="mensaje" name="mensaje" placeholder="Cuéntanos más sobre tus necesidades o ideas..." required="" rows="4"></textarea>
+<span class="error-msg" data-en="Please enter your project details" data-es="Por favor escribe los detalles de tu mensaje" data-i18n="t151" id="error-mensaje">Por favor escribe los detalles de tu mensaje</span>
+</div>
+<button class="btn btn-primary btn-block" type="submit">Solicitar cotización</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="brand-logo" href="#hero">
+<span class="logo-symbol">&lt;/&gt;</span> ByteScript<span class="logo-dot">.</span>
+</a>
+<p data-en="Web development and digital solutions for businesses that want to grow." data-es="Desarrollo web y soluciones digitales para negocios que quieren crecer." data-i18n="t152">Desarrollo web y soluciones digitales para negocios que quieren crecer.</p>
+</div>
+<div class="footer-links">
+<h4 data-en="Navigation" data-es="Navegación" data-i18n="t153">Navegación</h4>
+<ul>
+<li><a data-en="Home" data-es="Inicio" data-i18n="t154" href="#hero">Inicio</a></li>
+<li><a data-en="Services" data-es="Servicios" data-i18n="t155" href="#servicios">Servicios</a></li>
+<li><a data-en="Projects" data-es="Proyectos" data-i18n="t156" href="#proyectos">Proyectos</a></li>
+<li><a data-en="Packages" data-es="Paquetes" data-i18n="t157" href="#precios">Paquetes</a></li>
+<li><a data-en="Contact" data-es="Contacto" data-i18n="t158" href="#contacto">Contacto</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4 data-en="Contact" data-es="Contacto" data-i18n="t159">Contacto</h4>
+<p><strong>WhatsApp:</strong> +502 42023344</p>
+<p data-en="Guatemala, Central America" data-es="Guatemala, C.A." data-i18n="t160">Guatemala, C.A.</p>
+</div>
+</div>
+<div class="container footer-bottom">
+<p data-en="© 2026 ByteScript. All rights reserved." data-es="© 2026 ByteScript. Todos los derechos reservados." data-i18n="t161">© 2026 ByteScript. Todos los derechos reservados.</p>
+</div>
+</footer>
+<!-- Botón flotante de WhatsApp -->
+<a aria-label="Contactar por WhatsApp" class="whatsapp-float" href="https://wa.me/50242023344?text=Hola%20ByteScript%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20desarrollo%20web." rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="28" viewbox="0 0 32 32" width="28">
+<path d="M16 2a13 13 0 0 0-11.25 19.5L3 29l7.71-1.68A13 13 0 1 0 16 2zm0 23.8a10.74 10.74 0 0 1-5.48-1.5l-.39-.23-4.57 1 1-4.46-.26-.42a10.76 10.76 0 1 1 9.7 5.61zm5.9-8.07c-.32-.16-1.92-.95-2.22-1.06s-.52-.16-.74.16-.85 1.06-1.04 1.28-.39.24-.71.08a9 9 0 0 1-2.63-1.62 9.92 9.92 0 0 1-1.82-2.27c-.19-.32 0-.49.15-.65s.32-.37.48-.56a2.18 2.18 0 0 0 .32-.53.59.59 0 0 0 0-.56c-.08-.16-.74-1.78-1-2.44s-.55-.56-.75-.57h-.64a1.23 1.23 0 0 0-.89.41 3.77 3.77 0 0 0-1.18 2.8 6.56 6.56 0 0 0 1.37 3.48 15 15 0 0 0 5.75 5.08c2.19.95 2.64.76 3.12.71a2.66 2.66 0 0 0 1.76-1.24 2.17 2.17 0 0 0 .15-1.24c-.08-.13-.24-.21-.56-.37z"></path>
+</svg>
+</a>
+<!-- Botón Volver Arriba -->
+<button aria-label="Volver arriba" class="icon-btn back-to-top" id="back-to-top">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</button>
+<!-- Contenedor de Notificaciones Toast -->
+<div aria-live="polite" class="toast-container" id="toast-container"></div>
 </body>
 </html>
